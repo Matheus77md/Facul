@@ -20,3 +20,5 @@ CREATE TABLE consultas (
     PRIMARY KEY (cpf_paciente, data_consulta, horario),
     FOREIGN KEY (cpf_paciente) REFERENCES pacientes(cpf)
 );
+
+SELECT * FROM consultas;
