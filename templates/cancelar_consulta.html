@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Cancelar Consulta</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Cancelar Consulta</h2>
+        <form action="/cancelar_consulta" method="POST">
+            <label for="cpf">CPF do Paciente:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="data_consulta">Data da Consulta:</label>
+            <input type="date" id="data_consulta" name="data_consulta" required>
+
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" name="horario" required>
+
+            <button type="submit" class="btn">Cancelar</button>
+        </form>
+    </div>
+</body>
+</html>
